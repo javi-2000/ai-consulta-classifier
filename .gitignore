@@ -1,0 +1,16 @@
+# Environment files
+.env
+.env.*
+!.env.template
+
+# Laravel
+laravel/vendor/
+laravel/storage/*.key
+laravel/storage/logs/
+
+# Python
+fastapi/__pycache__/
+fastapi/.venv/
+
+# Docker
+*.log
