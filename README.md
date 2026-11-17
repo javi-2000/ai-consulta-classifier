@@ -4,7 +4,10 @@ Mini app full-stack (Laravel + MySQL + FastAPI) para clasificación automática 
 
 ## Requisitos
 
-- Docker Desktop / Docker Compose
+- Docker instalado:
+  - Windows / macOS: Docker Desktop
+  - Linux: Docker Engine + Docker Compose plugin
+
 - Puertos libres en tu máquina:
   - `3306` → MySQL
   - `8000` → Laravel (Blade)
