@@ -17,7 +17,7 @@ git clone https://github.com/javi-2000/ai-consulta-classifier.git
 cd javi_hueso_ai_test
 ```
 
-1. Rellena la API key en `backend/.env`.
+1. Rellena la API key en `ai_service/.env`.
 ```env
 OPENAI_API_KEY=sk-...
 ```
