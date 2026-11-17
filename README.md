@@ -15,9 +15,14 @@ Mini app full-stack (Laravel + MySQL + FastAPI) para clasificación automática 
 
 ## Arranque rápido
 
+1. Clona el repositorio
 ```bash
 git clone https://github.com/javi-2000/ai-consulta-classifier.git
-cd javi_hueso_ai_test
+```
+
+2. Accede a la raíz del proyecto
+```bash
+cd ai-consulta-classifier
 ```
 
 1. Rellena la API key en `ai_service/.env`.
@@ -25,7 +30,7 @@ cd javi_hueso_ai_test
 OPENAI_API_KEY=sk-...
 ```
 
-Sin esa key,`POST /classify` devuelve 503.
+Sin esa key, el servicio de clasificación no podrá procesar consultas correctamente.
 
 2. Levanta el proyecto:
 
@@ -50,6 +55,7 @@ curl -X POST http://localhost:8001/classify \
 ```bash
 # Ver logs
 docker compose logs -f backend
+docker compose logs -f llm
 
 # Recrear DB desde cero (borra datos y vuelve a seedear)
 docker compose exec backend php artisan migrate:fresh --seed
